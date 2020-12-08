@@ -23,14 +23,7 @@ jobs:
       - name: Publish to hub (latest)
         uses: elgohr/Publish-Docker-Github-Action@master
         with:
-          name: f43nd1r/acrarium:latest
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
-          workdir: acrarium
-      - name: Publish to hub (version tag)
-        uses: elgohr/Publish-Docker-Github-Action@master
-        with:
-          name: f43nd1r/acrarium:${{ steps.version.outputs.value }}
+          name: timbze/acrarium:latest
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           workdir: acrarium
